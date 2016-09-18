@@ -10,6 +10,7 @@ namespace Bootstrap_Practice_2.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.emery = "hello";
             return View();
         }
 
@@ -20,11 +21,12 @@ namespace Bootstrap_Practice_2.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
-        }
+        } 
     }
 }
