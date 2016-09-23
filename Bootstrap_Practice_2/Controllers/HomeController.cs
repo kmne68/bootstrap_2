@@ -27,6 +27,13 @@ namespace Bootstrap_Practice_2.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-        } 
+        }
+
+        public ActionResult TimeTrack()
+        {
+            ViewBag.Message = "Track time here.";
+
+            return View();
+        }
     }
 }
