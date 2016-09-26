@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <%--Hello from WebForm1--%>
+    Hello from WebForm1
     </div>
     </form>
 </body>
