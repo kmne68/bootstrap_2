@@ -2,9 +2,13 @@
 <html>
 <head>
     <link href="Content/fullcalendar.css" rel="stylesheet" />
+    <!--link href="Content/fullcalendar.print.css" media="print" rel="stylesheet" /-->
+    <link href='scheduler.css' rel='stylesheet' />
     <script src="Scripts/lib/jquery.min.js"></script>
     <script src="Scripts/lib/moment.min.js"></script>
     <script src="Scripts/fullcalendar.js"></script>
+    <script src='scheduler.js'></script>
+
     <script>
 
         $(document).ready(function () {
@@ -12,10 +16,14 @@
         // page is now ready, initialize the calendar...
 
          $('#calendar').fullCalendar({
-        // put your options and callbacks here
+             // put your options and callbacks here
+             dayClick: function () {
+                 alert('a day has been clicked!');
+             }
          })
 
         });</script>
+
     <title>Test Calendar</title>
 	<meta charset="utf-8" />
 </head>
