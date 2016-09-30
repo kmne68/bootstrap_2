@@ -35,5 +35,13 @@ namespace Bootstrap_Practice_2.Controllers
 
             return View();
         }
+
+
+        public ActionResult BootstrapExample1()
+        {
+            ViewBag.Message = "Bootstrap Example 1";
+
+            return View();
+        }
     }
 }
