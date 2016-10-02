@@ -58,7 +58,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin-left: 15px;
+//  margin: 0;
 }
 
 a:focus {
@@ -2172,8 +2173,9 @@ fieldset[disabled] .btn-warning.active {
 }
 
 .btn-danger {
-  color: #ffffff;
-  background-color: #d9534f;
+  color: #000000;
+    background-color: #000000;
+//  background-color: #d9534f;
   border-color: #d43f3a;
 }
 
@@ -2182,8 +2184,9 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #ffffff;
-  background-color: #d2322d;
+  color: #000000;
+    background-color: #000000;
+//  background-color: #d2322d;
   border-color: #ac2925;
 }
 
