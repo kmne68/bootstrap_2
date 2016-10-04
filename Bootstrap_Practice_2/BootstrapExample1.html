@@ -14,6 +14,8 @@
 
     <!-- Using the local css file rather than the cdn -->
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
     
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"-->
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"-->
@@ -280,7 +282,7 @@ for (int i = 0; i < 12; i++) {
     eggsInBasket = dozen - 1;
     eggsHatched = eggsInBasket * chickensCounted;
 }
-}</pre>
+</pre>
 
 
     <h4>Built in color classes</h4>
@@ -294,7 +296,110 @@ for (int i = 0; i < 12; i++) {
     <p class="bg-danger">Danger text background</p>  
     <br/>
 
+    <div class="container">
+        <h4>Basic Table</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Birth Year</th>
+                    <th>Alma Mater</th>
+                </tr>
+                <tr>
+                    <th>Adam Smith</th>
+                    <th>1723</th>
+                    <th>University of Glasgow</th>
+                </tr>
+                <tr>
+                    <th>Frederic Bastiat</th>
+                    <th>1801</th>
+                    <th>Saint Sever</th>
+                </tr>
+                <tr>
+                    <th>Friedrich Hayek</th>
+                    <th>1899</th>
+                    <th>University of Vienna</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="container">
+            <h4>Basic Table Condensed</h4>
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birth Year</th>
+                        <th>Alma Mater</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Adam Smith</th>
+                        <th>1723</th>
+                        <th>University of Glasgow</th>
+                    </tr>
+                    <tr>
+                        <th>Frederic Bastiat</th>
+                        <th>1801</th>
+                        <th>Saint Sever</th>
+                    </tr>
+                    <tr>
+                        <th>Friedrich Hayek</th>
+                        <th>1899</th>
+                        <th>University of Vienna</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div class="container">
+                <h4>Basic Table Striped</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birth Year</th>
+                            <th>Alma Mater</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Adam Smith</th>
+                            <th>1723</th>
+                            <th>University of Glasgow</th>
+                        </tr>
+                        <tr>
+                            <th>Frederic Bastiat</th>
+                            <th>1801</th>
+                            <th>Saint Sever</th>
+                        </tr>
+                        <tr>
+                            <th>Friedrich Hayek</th>
+                            <th>1899</th>
+                            <th>University of Vienna</th>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+
+            </div>
+
+
     <p>Use keyboard tags to illustrate keyboard input such as <kbd>Ctrl+V</kbd></p>
+
+
+    <div class="container">
+
+        <img src="Content/images/adam-smith.jpg" class="img-rounded" width="115" height="150" />
+        <img src="Content/images/frederic-bastiat.jpg" class="img-circle" width="115" height="150" />
+        <img src="Content/images/john-locke.jpg" class="img-thumbnail" width="115" height="150" />
+        <br />
+
+        <img src="Content/images/Pandemonium.jpg" class="img-responsive"/>
+        <br />
+        <img src="Content/images/Parliament.jpg"/>
+    </div>
 
             <footer>
                 <p>&copy; 2016 - WebApplication1</p>

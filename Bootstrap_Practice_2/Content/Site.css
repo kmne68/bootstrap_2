@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+  /*Custom added 2016-10-03*/
+.bg-danger {
+      background-color: #f2dede;
+  }
+
+
+  /*Custom added 2016-10-03*/
+.bg-success {
+      background-color: #def2de;
+  }

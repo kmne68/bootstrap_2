@@ -430,6 +430,7 @@ cite {
   color: #999999;
 }
 
+
 .text-primary {
   color: #428bca;
 }
@@ -6815,12 +6816,6 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important;
-  }
-
-
-  /*Custom added 2016-10-03*/
-  .bg-danger {
-      background-color: indianred;
   }
 
 }
