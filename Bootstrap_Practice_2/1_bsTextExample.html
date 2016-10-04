@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+
+    <!-- Controls responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bootstrap Example 1</title>
+
+    <!--environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </!--environment-->
+    <!-- Using the local css file rather than the cdn -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"-->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"-->
+    <!--script src="https://maxcdn.bootsrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></!--script-->
+
+
+</head>
+
+
+
+<body>
+    <!-- Native navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebApplication1</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    
+
+    <!-- Buttons examples -->
+    <br />
+    <br />
+    <p>
+        <button type="button" style="margin-left: 20px">Plain Example</button>
+    </p>
+    <br />
+    <p>
+        <button type="button" style="margin-left: 20px" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" style="color: yellow" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </p>
+
+
+<br />
+<br />
+    <div class="container">
+        <h2>Default text styling</h2>
+        <p>Highlight text with the <mark>mark</mark> tag.</p>
+
+        <blockquote>
+            <p>"The curious task of economics is to demonstrate to men how little they understand about what they imagine they can design."</p>
+            <footer>Friedrich Hayek</footer>
+        </blockquote>
+    </div>
+
+
+    <h4>Things to do when you're bored</h4>
+    <dt>Indoors</dt>
+    <dl>
+        <dd>Play a video game</dd>
+        <dd>Read a book</dd>
+        <dd>Watch television</dd>
+    </dl>
+    <dt>Outdoors</dt>
+    <dl>
+        <dd>Go for a hike</dd>
+        <dd>Play a game</dd>
+        <dd>Walk the dog</dd>
+    </dl>
+
+
+    <p>To show a single line of code, use the tags: <code>public static void main(String[] args)</code></p>
+    <br />
+    <br />
+    <p>For multiple lines of code, use pre tags like this:</p>
+    <pre>
+for (int i = 0; i < 12; i++) {
+    eggsInBasket = dozen - 1;
+    eggsHatched = eggsInBasket * chickensCounted;
+}
+</pre>
+    <br />
+    <br />
+
+    <h4>Built in color classes</h4>
+    <p class="text-muted">Muted text</p>
+    <p class="text-success">Success text</p>
+    <p class="text-danger">Danger text</p>
+    <p class="text-warning">Warning text</p>
+    <br />
+    <br />
+
+    <p class="bg-success">Success text background</p>
+    <p class="bg-danger">Danger text background</p>
+    <br />
+
+            <p>Use keyboard tags to illustrate keyboard input such as <kbd>Ctrl+V</kbd></p>
+
+            <footer>
+                <p>&copy; 2016 - WebApplication1</p>
+            </footer>
+
+</body>
+</html>
