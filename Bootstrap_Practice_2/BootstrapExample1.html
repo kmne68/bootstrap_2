@@ -26,10 +26,8 @@
 
 
 
-
-
-
 <body>
+    <!-- Native navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -51,6 +49,24 @@
             </div>
         </div>
     </div>
+
+    <!-- New nav bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">IS290</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -186,7 +202,7 @@
     </form>
 
 
-    <form id="HtmlForm" runat"server">
+    <form id="HtmlForm" runat="server">
         <div class="container-fluid">
             <h1>Nested columns</h1>
             <div class="row">
@@ -262,12 +278,14 @@
 
 
     <h4>Things to do when you're bored</h4>
-    <dt>Indodrs</dt>
+    <dt>Indoors</dt>
     <dl>
         <dd>Play a video game</dd>
         <dd>Read a book</dd>
         <dd>Watch television</dd>
+    </dl>
     <dt>Outdoors</dt>
+    <dl>
         <dd>Go for a hike</dd>
         <dd>Play a game</dd>
         <dd>Walk the dog</dd>
@@ -399,6 +417,16 @@ for (int i = 0; i < 12; i++) {
         <img src="Content/images/Pandemonium.jpg" class="img-responsive"/>
         <br />
         <img src="Content/images/Parliament.jpg"/>
+    </div>
+        <br />
+        <br />
+        <br />
+
+
+    <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/gqOEoUR5RHg"></iframe>
+        </div>
     </div>
 
             <footer>
