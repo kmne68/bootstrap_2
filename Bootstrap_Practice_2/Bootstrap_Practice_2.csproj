@@ -222,6 +222,9 @@
   <ItemGroup>
     <Content Include="1_bsTextExample.html" />
     <Content Include="2_bsColumnsExample.html" />
+    <Content Include="3_bsFormsExample.html" />
+    <Content Include="4_bsMediaExample.html" />
+    <Content Include="5_bsBasic.html" />
     <Content Include="Calendar.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
