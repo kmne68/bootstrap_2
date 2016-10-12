@@ -17,9 +17,12 @@
 
          $('#calendar').fullCalendar({
              // put your options and callbacks here
-             dayClick: function () {
-                 alert('a day has been clicked!');
-             }
+             header:{left:'prev, next, today',
+                 center: 'title',
+             right: 'month, agendaWeek, agendaDay' },
+//             dayClick: function () {
+  //               alert('a day has been clicked!');
+    //         }
          })
 
         });</script>
